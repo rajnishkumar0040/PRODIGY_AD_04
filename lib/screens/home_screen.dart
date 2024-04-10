@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.redAccent,
+      backgroundColor: const Color.fromARGB(255, 82, 203, 255),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -207,18 +207,18 @@ class _HomeScreenState extends State<HomeScreen> {
                         border: Border.all(
                           width: 5,
                           color: winnerbox.contains(index)
-                              ? const Color.fromARGB(255, 7, 64, 110)
-                              : Colors.amber,
+                              ? Color.fromARGB(255, 110, 7, 7)
+                              : Color.fromARGB(255, 7, 255, 52),
                         ),
                         color: winnerbox.contains(index)
-                            ? const Color.fromARGB(255, 7, 64, 110)
-                            : Colors.amber,
+                            ? Color.fromARGB(255, 110, 7, 7)
+                            : Color.fromARGB(255, 7, 255, 44),
                       ),
                       child: Center(
                         child: Text(
                           displayXO[index],
                           style: GoogleFonts.coiny(
-                            color: Colors.redAccent,
+                            color: Color.fromARGB(255, 255, 82, 82),
                             fontSize: 60,
                           ),
                         ),
